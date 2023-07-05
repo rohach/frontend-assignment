@@ -34,6 +34,7 @@ button {
   color: white;
   font-weight: normal;
 }
+
 /* Medium Screen */
 @media screen and (max-width: 1024px) {
   section {

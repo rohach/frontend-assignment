@@ -2,6 +2,9 @@ nav {
   display: flex;
   align-items: center;
   height: 80px;
+  backdrop-filter: blur(10px);
+}
+.nav_content {
   width: var(--width-sm);
   margin: 0 auto;
 }
@@ -12,10 +15,35 @@ nav {
 }
 .nav__links {
   font-size: 1rem;
+  font-weight: bold;
+}
+.hamburger {
+  display: none;
+}
+.nav__links:nth-of-type(1) {
+  font-size: 1.3rem;
 }
 .nav__links:nth-of-type(2) {
   margin-left: auto;
 }
 .nav__links:nth-of-type(5) {
   margin-left: auto;
+}
+@media screen and (max-width: 748px) {
+  nav {
+    width: var(--width-sm);
+  }
+  .nav__links:nth-of-type(1) {
+    font-size: 1.3rem;
+  }
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+  .nav__links:nth-of-type(2),
+  .nav__links:nth-of-type(3),
+  .nav__links:nth-of-type(4),
+  .nav__links:nth-of-type(5) {
+    display: none;
+  }
 }

@@ -5,8 +5,10 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   list-style: none;
-  text-decoration: none;
+  text-decoration: none !important;
+  transition: 250ms all ease;
 }
+
 :root {
   --grey: #f2f3f7;
   --small-text: #a9abae;
@@ -21,7 +23,7 @@ section {
   width: var(--width-sm);
   margin: 0 auto;
 }
-.container {
+.section_wide {
   margin-top: 2rem;
   width: 100%;
   text-align: justify;

@@ -13,9 +13,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Facility from './components/Facility/Facility';
 import './Main.css';
-import Newsletter from './components/Newsletter/Newsletter';
 import Footer from './components/Footer/Footer';
 import Headroom from 'react-headroom';
+import Mid from './components/Mid';
+import Loading from './components/Loading/Loading';
 
 function App() {
   return (
@@ -24,8 +25,7 @@ function App() {
         <Headroom>
           <Navbar />
         </Headroom>
-        <Facility />
-        <Newsletter />
+        <Mid />
         <Footer />
       </BrowserRouter>
     </>

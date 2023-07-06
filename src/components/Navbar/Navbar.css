@@ -3,6 +3,7 @@ nav {
   align-items: center;
   height: 80px;
   backdrop-filter: blur(10px);
+  border-bottom: 2px solid #f0f0f0;
 }
 .nav_content {
   width: var(--width-sm);
@@ -16,6 +17,7 @@ nav {
 .nav__links {
   font-size: 1rem;
   font-weight: bold;
+  cursor: pointer;
 }
 .hamburger {
   display: none;

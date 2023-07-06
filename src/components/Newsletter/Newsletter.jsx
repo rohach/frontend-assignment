@@ -6,7 +6,7 @@ import { FiMail } from 'react-icons/fi';
 const Newsletter = () => {
   return (
     <>
-      <div className="container newsletter">
+      <div className="section_wide newsletter">
         <div className="newsletter_left">
           <img src={news} alt="Newsletter image" className="newsletter_img" />
         </div>

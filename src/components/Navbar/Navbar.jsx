@@ -23,10 +23,18 @@ const Navbar = () => {
       <nav>
         <div className="nav_content">
           <ul className="nav__ul">
-            <li className="nav__links">OnlineStore</li>
-            <li className="nav__links">Home</li>
-            <li className="nav__links">Products</li>
-            <li className="nav__links">About</li>
+            <li className="nav__links">
+              <Link to="/">OnlineStore</Link>
+            </li>
+            <li className="nav__links">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="nav__links">
+              <Link to="products">Products</Link>
+            </li>
+            <li className="nav__links">
+              <Link to="products"></Link>
+            </li>
             <li className="nav__links">Sign in</li>
             <li className="nav__links hamburger " ref={btnRef} onClick={onOpen}>
               <MenuIcon />
@@ -47,10 +55,10 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
               </DrawerBody>
               <DrawerBody>
-                <Link to="/">Products</Link>{' '}
+                <Link to="products">Products</Link>
               </DrawerBody>
               <DrawerBody>
-                <Link to="/">About</Link>{' '}
+                <Link to="/"></Link>{' '}
               </DrawerBody>
               <DrawerFooter>
                 <Button colorScheme="blue">Sign in</Button>
